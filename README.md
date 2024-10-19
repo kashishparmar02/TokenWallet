@@ -4,7 +4,7 @@ BlockchainCoinSafe is a simple token wallet application built on blockchain prin
 
 ## 📍 Deployed App
 
-Explore the live app here: [BlockchainCoinSafe](https://blockchaincoinsafe.streamlit.app/)
+Explore the live app here: [BlockchainCoinSafe](https://blockchainwallet.streamlit.app/)
 
 ## Features
 
