@@ -107,7 +107,7 @@ def main():
             st.info("No transactions in the latest block.")
 
         # Download button for blockchain data
-        blockchain_text = "\n".join([f"Block {block['index']} - Timestamp: {block['timestamp']}, Transactions: {block['transactions']}, "
+        blockchain_text = "\n\n".join([f"Block {block['index']} - Timestamp: {block['timestamp']}, Transactions: {block['transactions']}, "
             f"Previous Hash: {block['previous_hash']}, Nonce: {block['nonce']}, Hash: {block['hash']}"
             for block in blockchain
         ])
