@@ -107,7 +107,7 @@ def main():
             st.info("No transactions in the latest block.")
 
         # Download button for blockchain data
-       import json
+      
 
 # Download button for blockchain data with structured format for transactions and blank line after each block
 blockchain_text = "\n\n".join([
