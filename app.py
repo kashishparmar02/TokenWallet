@@ -109,18 +109,18 @@ def main():
         # Download button for blockchain data
       
 
-# Download button for blockchain data with structured format for transactions and blank line after each block
-blockchain_text = "\n\n".join([
-    f"Block {block['index']} - Timestamp: {block['timestamp']}, Transactions: {json.dumps(block['transactions'], indent=4)}, "
-    f"Previous Hash: {block['previous_hash']}, Nonce: {block['nonce']}, Hash: {block['hash']}"
-    for block in blockchain
-])
-st.download_button(
-    label="Download Blockchain Data",
-    data=blockchain_text,
-    file_name="blockchain_data.txt",
-    mime="text/plain",
-)
+# Download button for blockchain data
+        blockchain_text = "\n".join([f"Block {block['index']} - Timestamp: {block['timestamp']}, Transactions: {block['transactions']}, "
+            f"Previous Hash: {block['previous_hash']}, Nonce: {block['nonce']}, Hash: {block['hash']}"
+            for block in blockchain
+        ])
+        st.download_button(
+            label="Download Blockchain Data",
+            data=blockchain_text,
+            file_name="blockchain_data.txt",
+            mime="text/plain",
+        )
+
 
     else:
         st.warning("Blockchain is empty.", icon="⚠️")
